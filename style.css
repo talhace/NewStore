@@ -121,3 +121,11 @@ footer div {
     text-align: center;
     font-weight: bold;
 }
+
+/* GROCERY SPECIFIC STYLING */
+
+section h2.grocery-h2 {
+    text-align: center;
+    margin: 20px;
+    padding: 5px;
+}
