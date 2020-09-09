@@ -1,0 +1,122 @@
+html {
+    position: relative;
+    min-height: 100%;
+}
+
+body {
+    padding: 0px;
+    border: none;
+    margin: 0px 1px 50px;
+}
+
+
+h1 {
+    margin: 10px 20px;
+    padding: 10px;
+}
+
+nav {
+    
+    border-top: 2px solid black;
+    border-bottom: 2px solid black; 
+}
+
+nav ul li {
+    display: inline-block;
+    list-style: none;
+    font-weight: bold;
+    padding: 0px 4px;
+    margin-top: 0px;
+}
+
+a {
+    text-decoration: none;
+    padding: 3px 5px;
+}
+a.active{
+    
+    border-bottom: 1px solid darkblue;
+}
+
+
+main p {
+    width: 96%;
+    margin: auto;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    
+}
+
+main h2 {
+    text-align: center;
+}
+
+main section h3 {
+    margin-left: 20px;
+}
+
+.grid {
+    text-align: center;
+}
+
+.grid .card {
+    display: inline-block;
+    padding: 10px;
+    width: 200px;
+    margin: 20px;
+    border: 3px black double;
+}
+
+.grid .card .card-header {
+    text-align: center;
+    font-weight: bold;
+    padding: 5px;
+    margin: 5px;
+}
+
+.grid .egg-img img{
+    width: 180px;
+    height: auto;
+    text-align: center;
+}
+
+.card .card-footer {
+    word-spacing: 10px;
+    text-align: center;
+}
+
+.grid .card .card-footer ul {
+    padding: 5px;
+    margin: 5px 5px;
+}
+.grid .card .card-footer ul li{
+    list-style: none;
+    display: inline-block;
+    padding: 0px 15px;
+    
+}
+
+.grid .card .card-footer .price-old {
+    text-decoration: line-through;
+}
+
+.grid .card .card-footer .price-now {
+    font-weight: bold;
+}
+
+footer {
+    background-color: lightgrey;
+    position: absolute;
+    bottom: 2px;
+    left: 0;
+    width: 100%;
+}
+
+footer div {
+    margin: 0px;
+    padding: 4px 10px;
+    border-top: 1px black solid;
+    border-bottom: 1px black solid;
+    text-align: center;
+    font-weight: bold;
+}
