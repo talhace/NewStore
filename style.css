@@ -15,22 +15,27 @@ body {
 
 /* NEW EDITS */
 
+header {
+    min-height: 50px;
+}
+
 header .grid {
     position: relative;
     width: 100%;
     min-height: 50px;
-    display: flex;
-    justify-content: space-between;
+    display: inline-block;
+    /* justify-content: space-between; */
 }
 
 header div .header-card1 {
-    display: inline-block;
-    margin: 15px 10px 0px 30px;
+    /* display: inline-block; */
+    float: left;
+    margin: 15px 10px 0px 25px;
     padding: 5px 10px;
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     color: dimgray;
     text-transform: uppercase;
-    z-index: 1;
+    z-index: -1;
 }
 
 header div.grid .header-card1 h1 {
@@ -38,24 +43,19 @@ header div.grid .header-card1 h1 {
 }
 
 header div.grid .header-card2 {
-    display: inline-block;
-    margin-top: 35px;
-    margin-right: 70px;
+    /* display: inline-block; */
+    float: right;
+    margin-top: 30px;               /* alternate 3% */
+    margin-right: 10%;            /* before 70px */
     margin-left: 0px;
 }
 
 
 /* NEW EDITS */
 
-header .best-store {
-    position: absolute;
-    top: 35px;
-    right: 70px;
-    z-index: -1;
-}
 
-
-/* header h1 {
+/* 
+header h1 {
     margin: 15px 20px 0px 20px;
     padding: 10px;
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
@@ -63,6 +63,12 @@ header .best-store {
     color: dimgray;
     text-transform: uppercase;
     z-index: 1;
+} 
+header .best-store {
+    position: absolute;
+    top: 35px;
+    right: 70px;
+    z-index: -1;
 } */
 
 
