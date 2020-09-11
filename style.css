@@ -167,6 +167,24 @@ main section h3 {
     font-weight: bold;
 }
 
+
+.button-order {
+    width: 55px;
+    text-align: center;
+    position: fixed;
+    right: 4%;
+    bottom: 6%;
+
+    color: whitesmoke;
+    font-size: 15px;
+    font-weight: bold;
+    letter-spacing: 2px;
+    border-radius: 8px 23px;
+    border: 3px double teal;
+    background-color: rgba(4, 61, 34, 0.4);
+}
+
+
 footer {
     background-color: lightgrey;
     position: absolute;
@@ -191,3 +209,24 @@ section h2.grocery-h2 {
     margin: 20px;
     padding: 5px;
 }
+
+
+/* width */
+::-webkit-scrollbar {
+    width: 10px;
+  }
+  
+  /* Track */
+  ::-webkit-scrollbar-track {
+    background: #f1f1f1; 
+  }
+   
+  /* Handle */
+  ::-webkit-scrollbar-thumb {
+    background: #888; 
+  }
+  
+  /* Handle on hover */
+  ::-webkit-scrollbar-thumb:hover {
+    background: #555; 
+  }
