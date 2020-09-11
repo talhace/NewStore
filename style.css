@@ -167,6 +167,24 @@ main section h3 {
     font-weight: bold;
 }
 
+
+.button-grid {
+    width: fit-content;
+    text-align: center;
+    position: fixed;
+    right: 50px;
+    bottom: 60px;
+
+    color: whitesmoke;
+    font-size: 15px;
+    font-weight: bold;
+    letter-spacing: 2px;
+    border-radius: 10px;
+    border: 3px double teal;
+    background-color: rgba(4, 73, 41, 0.596);
+}
+
+
 footer {
     background-color: lightgrey;
     position: absolute;
