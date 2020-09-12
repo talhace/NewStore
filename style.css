@@ -18,7 +18,8 @@ body {
 
 /* -------- HEADER: TITLE & INFO -------- */
 header {
-    min-height: 50px;
+    min-height: 4rem;
+    background-color: rgba(59, 166, 170, 0.753);
 }
 
 header .grid {
@@ -36,6 +37,7 @@ header div .header-card1 {
     padding: 5px 5px 5px 10px;
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     color: dimgray;
+    color: whitesmoke;
     text-transform: uppercase;
     z-index: -1;     /* Stack Order */
 }
@@ -49,14 +51,14 @@ header div.grid .header-card2 {
     float: right;
     margin: 30px 10% 0 10px;  /* alternate: 3% 70px 0 10px*/
     padding-left: 5px;
+    color: whitesmoke;
 }
 
 
 /* -------- NAVIGATION (BUTTONS) -------- */
 nav {
-    
     border-top: 2px solid black;
-    border-bottom: 2px solid black; 
+    border-bottom: 2px solid black;
 }
 
 nav ul {
@@ -71,15 +73,23 @@ nav ul li {
     padding: 0px 4px;
     margin-top: 8px;
     margin-bottom: 8px;
+    transition: transform 150ms ease-in-out;
 }
+nav ul li:hover {
+    transform: scale(1.2);
+}
+
 
 nav ul li a {
     text-decoration: none;
+    color: teal;
     padding: 3px 5px;
 }
+
+
 nav ul li a.active{
     
-    border-bottom: 1px solid darkblue;
+    border-bottom: 1px solid currentColor;
 }
 
 
@@ -125,6 +135,7 @@ main section h3 {
     width: 160px;
     height: 150px;
     text-align: center;
+    cursor: pointer;
 }
 
 .grid .card .card-footer {
@@ -163,6 +174,8 @@ main section h3 {
     border-radius: 8px 23px;
     border: 3px double teal;
     background-color: rgba(4, 61, 34, 0.4);
+    box-shadow: 0 0 25px -10px currentColor;
+    transition: transform 125ms ease-in-out;
 
     color: whitesmoke;
     font-size: 15px;
@@ -171,15 +184,18 @@ main section h3 {
     text-decoration: none;
     text-align: center;  
 }
-
+.button-order:hover {
+    transform: scale(1.15);
+}
 
 /* -------- FOOTER (Copy Rights) -------- */
 footer {
-    background-color: lightgrey;
     position: absolute;
     bottom: 2px;
     left: 0;
     width: 100%;
+    background-color: #588C94;
+    color: whitesmoke
 }
 
 footer div {
@@ -193,12 +209,6 @@ footer div {
 
 
 
-/* -------- SPECIFIC STYLING: GROCERY -------- */
-/* -------- SPECIFIC STYLING: VEGETABLES -------- */
-/* -------- SPECIFIC STYLING: FRUITS -------- */
-/* -------- SPECIFIC STYLING: MEAT -------- */
-/* -------- SPECIFIC STYLING: ORDER -------- */
-
 /* -------- SPECIFIC STYLING: ABOUT -------- */
 main .center-align {
     position: absolute;
@@ -206,17 +216,6 @@ main .center-align {
     left: 50%;
     transform: translate(-50%, -50%);
 }
-/* To Align One Elemtnt/Div Using Flex:
-
-    main .center-align {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-
-    Note: Multiple Items will get inline with this.
-*/
-
-
 
 
 /* -------- SPECIFIC STYLING: SCROLLBAR -------- */
@@ -232,12 +231,12 @@ main .center-align {
    
   /* Handle */
   ::-webkit-scrollbar-thumb {
-    background: #888; 
+    background: rgb(30, 151, 155); 
   }
   
   /* Handle on hover */
   ::-webkit-scrollbar-thumb:hover {
-    background: #555; 
+    background: rgb(20, 94, 107); 
   }
 
 
@@ -245,7 +244,51 @@ main .center-align {
 
 
 
+/* ====== EXTRA TWEAKS ====== */
 
+
+/* Some Good bk colore Teal family: #588C94 #1D3C41 */
+
+/* To Align One Elemtnt/Div Using Flex:
+
+    main .center-align {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    Note: Multiple Items will get inline with this. */
+
+
+/* NEW: FIXED HEADER & NAVIGATION
+
+header {
+    position: fixed;  NEW: FIXED HEADER
+    top: 0;
+    width: 100%;
+}
+
+nav{
+    position: fixed;
+    top: 4.1rem;
+    width: 100%;
+    background-color: #336f79;
+}
+
+nav ul li a {
+    color: white;
+}
+
+main {
+    margin-top: 8.1rem;
+}
+*/
+
+
+/* -------- SPECIFIC STYLING: GROCERY -------- */
+/* -------- SPECIFIC STYLING: VEGETABLES -------- */
+/* -------- SPECIFIC STYLING: FRUITS -------- */
+/* -------- SPECIFIC STYLING: MEAT -------- */
+/* -------- SPECIFIC STYLING: ORDER -------- */
 
 
   /* ---------- THE END ---------- */
