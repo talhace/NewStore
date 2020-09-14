@@ -184,7 +184,7 @@ main section h3 {
     text-decoration: none;
     text-align: center;  
 }
-.button-order:hover {
+.button-order:hover {       /* LINEAR ANIMATION ADDED AT END OVERWRITES THE EASE-IN-OUT TRANSFORMATION */
     transform: scale(1.15);
 }
 
@@ -282,6 +282,19 @@ main {
     margin-top: 8.1rem;
 }
 */
+
+/* Linear Animation */
+.button-order {
+    animation: wave alternate-reverse 1s infinite;
+}
+@keyframes wave {
+    0% {
+        transform: translateX(0);
+    }
+    100% {
+        transform: translateX(-30%);
+    }
+}
 
 
 /* -------- SPECIFIC STYLING: GROCERY -------- */
